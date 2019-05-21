@@ -34,3 +34,13 @@ tags:
 刑警:年轻的时候是个中学老。人长的漂亮，歌又唱的好，很受人欢迎。
 
 ![](/img/post-life-of-matsuko/matsuko1.jpg)
+
+<video id="video" controls="" preload="none" poster="http://prucdvp74.bkt.clouddn.com/img/IMG_0129.GIF">
+      <source id="mp4" src="http://prucdvp74.bkt.clouddn.com/video/8.mp4">
+</video>
+
+<div class="video-container" autoplay="true">
+      <iframe src="http://prucdvp74.bkt.clouddn.com/video/8.mp4"
+              frameborder="0" width="560" height="315">
+      </iframe>
+</div>
