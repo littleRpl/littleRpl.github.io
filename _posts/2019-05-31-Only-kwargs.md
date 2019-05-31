@@ -4,8 +4,8 @@ title:        "PEP 3102 -- Keyword-Only Arguments"
 subtitle:     "PEP 仅限关键字参数 翻译"
 date:         2019-05-31 12:00:00
 author:       "Rpl"
-header-img:   "img/in-post/post-eleme-pwa/eleme-at-io.jpg"
-header-mask:  0.8
+header-img:   "img/python6.png"
+header-mask:  0.6
 catalog:      true
 multilingual: true
 tags:

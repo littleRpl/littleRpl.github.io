@@ -38,7 +38,7 @@ tags:
 
 
 <div class="video-container" autoplay="flase">
-      <iframe src="http://prucdvp74.bkt.clouddn.com/video/8.mp4"
+      <iframe src="/video/8.mp4"
               frameborder="0" width="560" height="315">
       </iframe>
 </div>
