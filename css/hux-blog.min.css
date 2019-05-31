@@ -13,6 +13,7 @@
 }
 
 .video-container iframe,
+.video-container video,
 .video-container object,
 .video-container embed {
   position: absolute;

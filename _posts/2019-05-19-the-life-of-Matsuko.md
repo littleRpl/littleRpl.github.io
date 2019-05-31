@@ -37,8 +37,10 @@ tags:
 
 
 
-<div class="video-container" autoplay="flase">
-      <iframe src="/video/8.mp4"
-              frameborder="0" width="560" height="315">
-      </iframe>
+<div class="video-container">
+      <video controls>
+      	<source src="/video/8.mp4" type="video/mp4">
+      </video>
 </div>
+
+
