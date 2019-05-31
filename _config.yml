@@ -1,7 +1,7 @@
 # Site settings
 title: Rpl Blog
 SEOTitle: Rpl的博客 | Rpl Blog
-header-img: img/home-bg.jpg
+header-img: img/home-bg-art.jpg
 email: littlerpl@163.com
 description: "记录想法,记录生活"
 keyword: "任鹏磊, rpl任鹏磊, littlerpl, @littlerpl, Rpl的博客 , Rpl Blog, 博客, 个人网站, 互联网, Web, python" 
@@ -28,7 +28,7 @@ highlighter: rouge
 permalink: pretty
 paginate: 10
 exclude: ["less","node_modules","Gruntfile.js","package.json","README.md","README.zh.md"]
-anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+anchorjs: false                          # if you want to customize anchor. check out line:181 of `post.html`
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
 timezone: CN  
 

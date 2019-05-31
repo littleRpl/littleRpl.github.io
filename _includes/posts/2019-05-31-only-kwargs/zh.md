@@ -1,21 +1,10 @@
-﻿---
-layout:		post
-title: 		"python keyword-only Arguments"
-subtitle:   '关于python仅限关键字的PEP译文'
-date:       2019-04-22 12:00:00
-author: 	"rpl"
-header-style: text
-catalog: true
-tags:
-  - 译文
-  - python
-  - 技术
----
 
-# 前言
-本篇文章是对[**PEP 3102 -- Keyword-Only Arguments**](https://www.python.org/dev/peps/pep-3102/)这篇文章的翻译。PEP文章真是难看，一堆晦涩，加上能力不够，所以这篇翻译可能并不完美，需要阅读原英文文档的，可点击查看以上的链接。PDF版本可在此处下载 [**百度云提取码：wpnq**](https://pan.baidu.com/s/1EMfffaovVkJuqiUKk3VbuA)。
 
-这篇文章只是对python3新增加的keyword-only Argument的解释，关于python **函数位置参数，默认参数， 可变参数，可变关键字参数**，可移步[python 位置参数，默认参数， 可变参数，仅限关键字参数，可变关键字参数的详解及区别](https://blog.csdn.net/littleRpl/article/details/89497670)。
+> 本篇文章是对[**PEP 3102 -- Keyword-Only Arguments**](https://www.python.org/dev/peps/pep-3102/)这篇文章的翻译。PEP文章真是难看，一堆晦涩，加上能力不够，所以这篇翻译可能并不完美，需要阅读原英文文档的，可点击查看以上的链接。PDF版本可在此处下载 [**百度云提取码：wpnq**](https://pan.baidu.com/s/1EMfffaovVkJuqiUKk3VbuA)。
+
+> 这篇文章只是对python3新增加的keyword-only Argument的解释，关于python **函数位置参数，默认参数， 可变参数，可变关键字参数**，可移步[python 位置参数，默认参数， 可变参数，仅限关键字参数，可变关键字参数的详解及区别](https://blog.csdn.net/littleRpl/article/details/89497670)。
+
+
 # 摘要
 本篇PEP提出了一个对函数参数赋值到命名参数槽的方法的改变。特别是，支持声明仅限关键字参数：此种参数只能由关键字提供，绝对不会被位置参数自动填充。
 

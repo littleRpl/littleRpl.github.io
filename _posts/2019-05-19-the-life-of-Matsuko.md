@@ -35,11 +35,9 @@ tags:
 
 ![](/img/post-life-of-matsuko/matsuko1.jpg)
 
-<video id="video" controls="" preload="none" poster="http://prucdvp74.bkt.clouddn.com/img/IMG_0129.GIF">
-      <source id="mp4" src="http://prucdvp74.bkt.clouddn.com/video/8.mp4">
-</video>
 
-<div class="video-container" autoplay="true">
+
+<div class="video-container" autoplay="flase">
       <iframe src="http://prucdvp74.bkt.clouddn.com/video/8.mp4"
               frameborder="0" width="560" height="315">
       </iframe>
