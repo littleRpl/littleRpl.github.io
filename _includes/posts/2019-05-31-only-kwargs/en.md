@@ -69,7 +69,7 @@ As a convenient shortcut, we can simply omit the 'ignore' name, meaning 'don't a
 beyond this point'.
 
 ```python
-def compare(a, b， *, key=None)
+def compare(a, b, *, key=None)
 	...
 ```
 
@@ -116,8 +116,6 @@ In accordance with the current Python implementation, any errors encountered wil
 Backwards Compatibility
 
 The function calling behavior specified in this PEP is a superset of the existing behavior - that is, it is expected that any existing programs will continue to work.
-
-
 
 This document has been placed in the public domain.
 
