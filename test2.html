@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>jquery上传视频并截取第一帧当作封面图同步上传的在线演示-aijQuery.cn</title>
+<!-- <script language="JavaScript" src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script> -->
+<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> -->
+  <style type="text/css">
+    #drop {height:200px;border:2px dashed #2D67D1;}
+    img,video {max-height:190px}
+    h2 {line-height:130px}
+    .drag_hover {border:2px dashed red!important;background-color:#2E6DA4!important;}
+  </style>
+</head>
+<body style="text-align:center">
+  <h3>jquery上传视频并截取第一帧当作封面图同步上传</h3>
+  	<div id="drop" class="w-75 mx-auto">
+      <h2>可把图片直接拖拽到这里</h2>
+  	</div>
+  	<input type="file" class="form-control-file mt-1 mx-auto" id="selectfile">
+  <button id="Up" class="btn btn-primary mt-2">上传</button>
+<script language="javascript">
+var $file=$("#selectfile");
+$file.on("change",function(){GetFile($file.get(0).files);});
+//声明一个formdata 用来上传
+var UForm=new FormData();
+$("#Up").on("click",function(){DoUp();});
+  
+var $drop=$("#drop");
+with($drop){
+    on("dragenter",function(){$drop.addClass("drag_hover");});
+    on("dragleave",function(){$drop.removeClass("drag_hover");});
+    on("dragover",function(e){
+      e.originalEvent.dataTransfer.dragEffect = 'copy';
+      e.preventDefault();
+    });
+    on("drop",function(e){
+      e.preventDefault();
+      var files = e.originalEvent.dataTransfer.files;
+      $drop.removeClass("drag_hover");
+      if(files.length != 0){GetFile(files);};
+    });
+};
+function GetFile(files){
+  var file=files?files[0]:false;if(!file){return false;};
+  UForm.append("shipin",file);//把要上传的视频放到UFom里
+  var reader = new FileReader();
+  reader.onload =function(){
+    $drop.html("<div class='row'><div id='video' class='col-6'></div><div id='img' class='col-6'></div></div>");
+  	var html="<video src='"+URL.createObjectURL(file)+"' controls />";
+    var $video=$(html).appendTo($drop.find("#video"));
+    with($video){
+      on("error",function(){alert("加载视频失败!请上传正确的视频！");return false;});
+      on("loadeddata",function(){MakePoster($video[0]);});
+    };
+  };
+  reader.readAsDataURL(file);
+};
+function MakePoster(video){
+	//canvas转Blob
+  var dataURLtoBlob=function (dataurl) {
+    var arr = dataurl.split(','),
+        mime = arr[0].match(/:(.*?);/)[1],
+        bstr = atob(arr[1]),
+        n = bstr.length,
+        u8arr = new Uint8Array(n);
+    while(n--) {
+      u8arr[n] = bstr.charCodeAt(n);
+    }
+    return new Blob([u8arr],{type:mime});
+  };
+  var scale = 0.7;//截图绽放比例
+  var canvas = document.createElement("canvas");
+  canvas.width = video.videoWidth * scale;
+  canvas.height = video.videoHeight * scale;
+  canvas.getContext('2d').drawImage(video, 0, 0, canvas.width,canvas.height);
+  var imgsrc = canvas.toDataURL('image/jpeg',0.8);//第二个参数指图片质量
+  var poster=dataURLtoBlob(imgsrc);
+   UForm.append("fengmain",poster);//把要上传的封面图片放到UFom里
+  $drop.find("#img").append('<img src="'+imgsrc+'">');
+}
+function DoUp(){
+	$.ajax({
+      url:"服务器端接收数据的文件",
+      type:"POST",
+      data:UForm,
+      success:function(d){
+        //成功
+      },
+      error:function(e){alert("这里只是测试，不能上传，你可以把代码复制过去，把url里换成自己的地址来实现服务器端的后台接收数据!");},
+      contentType:false,
+	processData:false
+    });
+}
+</script>
+</body>
+</html>

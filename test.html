@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/home/roo/RPL_Project/littleRpl.github.io/css/hux-blog.min.css">
+
+</head>
+<body>
+	<div class="video-container" >
+	    
+	      <video  id="video" src="video/8.mp4" controls></video>
+	     
+	</div>
+
+	<br>
+    <br> 视频第一帧图片：
+    <script type="text/javascript">
+    	console.log(123456789);
+        (function() {
+        	console.log(123456789);
+            var video, output;
+            var scale = 0.8;
+            var img = document.createElement("img");
+            img.setAttribute('crossorigin', 'anonymous');
+
+            var initialize = function() {
+                output = document.getElementById("output");
+                video = document.getElementById("video");
+
+                video.addEventListener('loadeddata', captureImage);
+                // captureImage()
+                // MakePoster(video);
+            };
+
+
+            var captureImage = function() {
+            	
+                var canvas = document.createElement("canvas");
+                canvas.width = video.videoWidth * scale;
+                canvas.height = video.videoHeight * scale;
+                console.log(video);
+                console.log(img);
+                console.log(canvas.width, canvas.height);
+                var ctx = canvas.getContext('2d');
+
+                // var img = document.createElement("img");
+                // img.setAttribute('crossorigin', 'anonymous');
+                
+                ctx.drawImage(video, 0, 0, canvas.width,canvas.height);
+                img.src = canvas.toDataURL("image/png");
+                console.log(img.src);
+              
+              
+                // img.src = canvas.toDataURL("image/png");
+
+                
+                console.log(img.src)
+                output.appendChild(img);
+            };
+            initialize();
+
+            
+
+
+
+        })();
+
+
+    </script>
+
+
+</body>
+</html>

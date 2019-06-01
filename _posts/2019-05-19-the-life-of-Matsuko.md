@@ -40,7 +40,7 @@ tags:
 	      <!-- <iframe src="/home/roo/RPL_Project/littleRpl.github.io/video/8.mp4"
 	              frameborder="0" width="560" height="315">
 	      </iframe> -->
-	      <video controls>
+	      <video id="video" controls>
 	      	<source src="/video/8.mp4" type="video/mp4">
 	      </video>
 	      <div id="output"></div>
