@@ -36,11 +36,14 @@ tags:
 ![](/img/post-life-of-matsuko/matsuko1.jpg)
 
 
-
-<div class="video-container">
-      <video controls>
-      	<source src="/video/8.mp4" type="video/mp4">
-      </video>
+<div class="video-container" id="video">
+	      <!-- <iframe src="/home/roo/RPL_Project/littleRpl.github.io/video/8.mp4"
+	              frameborder="0" width="560" height="315">
+	      </iframe> -->
+	      <video controls>
+	      	<source src="/video/8.mp4" type="video/mp4">
+	      </video>
+	      <div id="output"></div>
 </div>
 
-
+    
