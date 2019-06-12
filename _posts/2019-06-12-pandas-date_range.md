@@ -4,8 +4,8 @@ title:        "pandas date_range() "
 subtitle:     "generate DatetimeIndex sequences quickly and easily"
 date:         2019-06-12 12:00:00
 author:       "Rpl"
-header-img:   "img/python6.png"
-header-mask:  0.6
+header-img:   "img/panda1.jpg"
+header-mask:  0.65
 catalog:      true
 multilingual: true
 tags:
