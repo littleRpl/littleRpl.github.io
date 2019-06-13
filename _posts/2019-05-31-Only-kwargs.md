@@ -9,8 +9,9 @@ header-mask:  0.6
 catalog:      true
 multilingual: true
 tags:
-    - python
-    - 译文
+  - 技术
+  - python
+  - 译文
 ---
 
 <!-- Chinese Version -->
