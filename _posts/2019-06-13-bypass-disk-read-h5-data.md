@@ -8,6 +8,7 @@ header-style:   "text"
 tags:
     - python
     - hdfs
+    - 技术
 ---
 
 

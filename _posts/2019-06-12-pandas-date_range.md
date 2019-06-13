@@ -12,6 +12,7 @@ tags:
     - python
     - pandas
     - 译文
+    - 技术
 ---
 
 
