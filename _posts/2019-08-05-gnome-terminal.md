@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "gome-terminal 终端复用"
+title:        "gnome-terminal 终端复用"
 date:         2019-08-5 17:00:00
 author:       "Rpl"
 header-img:   "img/gnome/16.png"
