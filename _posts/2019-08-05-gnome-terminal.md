@@ -25,7 +25,7 @@ tags:
 
 1. 在终端中 输出 gnome-terminal，就会自动弹出一个新的终端
 
-2. Ctrl + Alt + Shift键，也会弹出一个新的终端
+2. Ctrl + Alt + t键，也会弹出一个新的终端
 
 ---
 
