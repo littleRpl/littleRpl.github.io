@@ -303,7 +303,7 @@ apt install fuse libfuse2
 
 然后再以相同的方式安装 moosefs-client:
 ```shell
-# apt install moosefs-client
+apt install moosefs-client
 ```
 
 假设,您将系统挂载到客户机上的/mnt/mfs文件夹中:
