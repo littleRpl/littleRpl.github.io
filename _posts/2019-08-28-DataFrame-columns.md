@@ -26,12 +26,12 @@ import numpy as np
 df = pd.DataFrame(data=np.arange(20).reshape(5,4), columns=['a', 'b', 'c', 'd'])
 
 df
-     a      b     c    d
-0    0     1     2     3
-1    4     5     6     7
-2    8     9    10   11
-3   12   13    14   15
-4   16   17    18   19
+ a   b   c   d
+0   0   1   2   3
+1   4   5   6   7
+2   8   9  10  11
+3  12  13  14  15
+4  16  17  18  19
 
 ```
 
