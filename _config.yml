@@ -80,7 +80,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "如果你能在另一个地方醒来<br>如果你能在另一个时间醒来<br>为什么醒来后你不能成为另一个人"
-sidebar-avatar: /img/sidebar_01.png      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/sidebar_02.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
