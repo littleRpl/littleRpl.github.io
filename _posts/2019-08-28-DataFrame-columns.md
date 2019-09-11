@@ -4,7 +4,8 @@ title:  "DataFrame.columns 的重命名"
 subtitle:  '介绍DataFrame数据的columns的重命名,以及踩过的坑.'
 date:  2019-08-28 12:00:00
 author:  "rpl"
-header-style:  "text"
+header-img:   "img/panda1.jpg"
+header-mask:  0.65
 catalog: true
 tags:
     - 原创
@@ -26,7 +27,7 @@ import numpy as np
 df = pd.DataFrame(data=np.arange(20).reshape(5,4), columns=['a', 'b', 'c', 'd'])
 
 df
- a   b   c   d
+    a   b   c   d
 0   0   1   2   3
 1   4   5   6   7
 2   8   9  10  11
