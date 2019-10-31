@@ -96,6 +96,15 @@ cd 进入 .../xxx/trash/ 进行恢复：
 
 于是我花5分钟写了个python脚本，实现了批量恢复.
 ```python
+# coding=utf-8
+
+"""
+Author: rpl
+
+date: 19-10-30 下午2:19
+desc:file mv to undel
+"""
+
 import os
 import shutil
 import traceback
