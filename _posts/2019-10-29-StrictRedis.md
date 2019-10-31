@@ -13,12 +13,12 @@ tags:
     - redis
     - StrictRedis
     - ConnectPool
-    - 连接池
 
 ---
 
 
 先上结论：**直接使用 StrictRedis() 即可**。
+三者关系： StrictRedis = Redis > ConnectPool(包含)
 
 
 原因如下:
@@ -118,7 +118,7 @@ class ConnectionPool(object):
 
 ***
 
-那么Redis() 是怎么使用连接池的呢？从Redis的get()，set()等操作中下手找
+那么Redis() 是怎么实现连接池的呢？从Redis的get()，set()等操作中下手找
 
 先看一下Redis.set()的实现：
 
