@@ -85,7 +85,7 @@ echo "deb http://ppa.moosefs.com/moosefs-3/apt/ubuntu/xenial xenial main" > /etc
 
 接着运行：
 ```shell
-apt run
+apt update
 ```
 
 到此，准备工作结束，我们开始 MooseFS 的安装与配置工作
