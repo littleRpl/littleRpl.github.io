@@ -5,7 +5,7 @@ subtitle:     'systemctl restart systemd-logind'
 date:         2019-11-08 11:30:00
 author:       "Rpl"
 header-img:   "img/fluc_code2.gif"
-header-mask:  0.4
+header-mask:  0.1
 catalog:      true
 
 tags:
