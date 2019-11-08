@@ -9,7 +9,6 @@ catalog:      true
 
 tags:
   - music
-  - Queen
   - 原创
 
 ---
