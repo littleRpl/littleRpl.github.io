@@ -9,6 +9,7 @@ header-mask:  0.7
 catalog:    true
 tags:
     - 转载
+    - 时论
 
 ---
 
