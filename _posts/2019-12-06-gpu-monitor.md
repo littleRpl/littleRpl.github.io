@@ -4,8 +4,8 @@ title:        "linux资源监控——获取GPU信息"
 subtitle:     'gpustat --json'
 date:         2019-12-06 14:00:00
 author:       "Rpl"
-header-img:   "img/gpustat/5.png"
-header-mask:  0.7
+header-img:   "img/gpustat/7.png"
+header-mask:  0.55
 catalog:      true
 
 tags:
@@ -21,7 +21,7 @@ tags:
 
 linux资源监控系列文章: 
 1. [linux资源监控——计算CPU利用率](http://littlerpl.me/2019/06/20/cpu/)
-2. [linux资源监控——获取GPU信息](http://littlerpl.me/2019/12/06/gpustat/)
+2. [linux资源监控——获取GPU信息](http://littlerpl.me/2019/12/06/gpu-monitor/)
 3. [linux资源监控——获取Memory与Swap的使用率](http://littlerpl.me/2019/12/06/memory-swap/)
 
 关联文章:

@@ -5,7 +5,7 @@ title:        "linux资源监控——获取Memory与Swap的使用率"
 date:         2019-12-06 14:30:00
 author:       "Rpl"
 header-img:   "img/memory-swap-info/4.png"
-header-mask:  0.5
+header-mask:  0.65
 catalog:      true
 
 tags:
@@ -22,7 +22,7 @@ tags:
 
 linux资源监控系列文章: 
 1. [linux资源监控——计算CPU利用率](http://littlerpl.me/2019/06/20/cpu/)
-2. [linux资源监控——获取GPU信息](http://littlerpl.me/2019/12/06/gpustat/)
+2. [linux资源监控——获取GPU信息](http://littlerpl.me/2019/12/06/gpu-monitor/)
 3. [linux资源监控——获取Memory与Swap的使用率](http://littlerpl.me/2019/12/06/memory-swap/)
 
 关联文章:
