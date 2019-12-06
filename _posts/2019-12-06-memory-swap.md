@@ -4,7 +4,7 @@ title:        "linux资源监控——获取Memory与Swap的使用率"
 # subtitle:     ''
 date:         2019-12-06 14:30:00
 author:       "Rpl"
-header-img:   "img/gpustat/5.png"
+header-img:   "img/memory-swap-info/4.png"
 header-mask:  0.5
 catalog:      true
 

@@ -6,7 +6,7 @@ date:         2019-12-06 14:00:00
 author:       "Rpl"
 header-img:   "img/gpustat/5.png"
 header-mask:  0.7
-# catalog:      true
+catalog:      true
 
 tags:
   - 技术
