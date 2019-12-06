@@ -13,6 +13,7 @@ tags:
   - linux
   - python
   - gpustat
+  - gpu
   - 原创
 
 ---
