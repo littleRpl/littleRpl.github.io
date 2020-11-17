@@ -1,8 +1,8 @@
-# Hux Blog
+# Rpl Blog
 
-### [View Live Hux Blog &rarr;](https://huangxuan.me)
+### [View Live Rpl Blog &rarr;](https://littlerpl.me)
 
-![](http://huangxuan.me/img/blog-desktop.jpg)
+![](http://https://littlerpl.me/img/blog-desktop.jpg)
 
 
 
