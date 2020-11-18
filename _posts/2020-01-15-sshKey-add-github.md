@@ -4,7 +4,7 @@ title:  'ssh密钥配合多个github账号'
 subtitle: ''
 date: 2020-01-15 11:06:29
 author: 'rpl'
-header-img: ''
+header-img: 'img/post-bg-infinity.jpg'
 header-mask:  0.65
 multilingual: false
 catalog: true
