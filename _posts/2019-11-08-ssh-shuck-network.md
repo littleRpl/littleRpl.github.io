@@ -56,7 +56,7 @@ Ubuntu上查看/var/log/auth.log的信息，(CentOs cat/var/log/secure）
 cat /var/log/auth.log
 ```
 果然在最后一条，看到了ssh回话创建失败
-![1](/img/ssh/2.png)
+![1](/img/ssh/1.png)
 
 重启systemd-logind
 ```shell
