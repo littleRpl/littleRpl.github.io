@@ -8,6 +8,10 @@ header-style:  "text"
 catalog: true
 tags:
     - 原创
+    - 技术
+    - python
+    - matplotlib
+    - psutils
 ---
 
 > python脚本监控服务器的cpu， memory， swap等资源信息，可视化数据
