@@ -131,12 +131,9 @@ df
 names = new_columns， 在读取文件的时候直接重命名列名。
 
 ```python
-df = pd.read_csv('xxx.csv', names=new_columns, header=0)
+df = pd.read_csv('xxx.csv', names=new_columns,)
 ```
 
----
-
-# 后记
 
 这里讲一个之前在读csv文件， 重命名时，踩到的一个小坑。
 
@@ -146,6 +143,11 @@ df = pd.read_csv('xxx.csv', names=new_columns, header=0)
 df = pd.read_csv('xxx.csv')
 df.columns = new_columns
 ```
-这样做，大部分情况下不会有什么问题，直到有天我读的是无列名的csv文件。pandas默认将第一行数据作为了列名。这时我再进行df.columns = new_columns 时，第一行数据就会因为作为列名，被new_columns替换了。这就导致我第一行数据白白丢失了（想哭）。今天写这篇博客的目的。也就是想记住这个坑。
+这样做，大部分情况下不会有什么问题，直到有天我读的是无列名的csv文件。pandas默认将第一行数据作为了列名。这时我再进行df.columns = new_columns 时，第一行数据就会因为作为列名，被new_columns替换了。这就导致我第一行数据白白丢失了（想哭）。
+
+如果csv文件是无列名文件的话， 要是用参数header=None，这样不会默认把第一行数据作为列名
+ ```python
+df = pd.read_csv('xxx.csv', names=new_columns, header=None)
+```
 
 pandas的read_csv() 函数，其实还踩过很多坑，里面有很多参数，我会在之后的博客里详解read_csv()的各个参数的用法。

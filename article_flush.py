@@ -227,7 +227,7 @@ def access_all_articles():
 
         t1 = time.time() - t0
         print(f'---------------- seconds: {t1} ---------------\n')
-        time.sleep(1)
+        time.sleep(3)
 
 
 def mutil():
