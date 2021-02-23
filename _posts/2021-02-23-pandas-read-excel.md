@@ -15,8 +15,6 @@ tags:
       - pandas
 ---
 
-# pandas 读取excel文件
-
 > pandas 读取excel文件使用的是 read_excel方法。本文将详细解析read_excel方法的常用参数，以及实际的使用示例
 
 
@@ -30,6 +28,7 @@ pd.read_excel(file_name)
 ```
 
 
+***
 ## 二 read_excel() 的常用的参数: 
 1. io:  excel路径 可以是文件路径， 类文件对象， 文件路径对象等。
 
@@ -66,7 +65,7 @@ pd.read_excel(file_name)
 11. nrows=None: int类型，默认None。 只解析指定行数的数据。
 
 
-
+***
 ## 三 示例
 
 如图是演示使用的execel文件，它包含5张工作表。
@@ -91,6 +90,7 @@ with open(file, 'rb') as f:
     df = pd.read_excel(f, sheet_name='Sheet1')
 ```
 
+
 ### 2. sheet_name：指定工作表名
 
 sheet_name='Sheet'， 指定解析名为"Sheet1"的工作表。返回一个DataFrame类型的数据。
@@ -107,7 +107,6 @@ df_dict = pd.read_excel(file, sheet_name=[0,1,'Sheet1'])
 ![image-20210222112021091](/img/pandas-read_excel/image-20210222112021091.png)
 
 
-
 sheet_name=None 会解析该文件中所有的工作表，返回一个同上的字典类型的数据。
 ```python
 df_dict = pd.read_excel(file, sheet_name=None)
@@ -116,12 +115,10 @@ df_dict = pd.read_excel(file, sheet_name=None)
 
 ### 3. header ：指定标题行
 header是用来指定数据的标题行，也就是数据的列名的。本文使用的示例文件具有中英文两行列名，默认header=0是使用第一行数据作为数据的列名。
-
 ```python
 df_dict = pd.read_excel(file, sheet_name='Sheet1')
 ```
 ![image-20210222143454435](/img/pandas-read_excel/image-20210222143454435.png)
-
 
 
 header=1， 使用指定使用第二行的英文列名。
@@ -138,7 +135,6 @@ df_dict = pd.read_excel(file, sheet_name='Sheet1', header=None)
 ![image-20210222175121600](/img/pandas-read_excel/image-20210222175121600.png)
 
 ### 4. names： 指定列名
-
 指定数据的列名，如果数据已经有列名了，会替换掉原有的列名。
 ```python
 df = pd.read_excel(file, sheet_name='Sheet1', names=list('123456789ABCDE'))
@@ -209,7 +205,6 @@ df = pd.read_excel(file, sheet_name='Sheet1', skipfooter=5)
 示例数据中，测试编码数据是文本，而pandas在解析的时候自动转换成了int64类型，这样codes列的首位0就会消失，造成数据错误，如下图所示
 
 ![image-20210223102218617](/img/pandas-read_excel/image-20210223102218617.png)
-
 
 
 指定codes列的数据类型：
