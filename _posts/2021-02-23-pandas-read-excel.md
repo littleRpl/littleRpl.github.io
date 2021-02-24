@@ -4,7 +4,7 @@ title:  "pandas 读取excel文件"
 subtitle: "panads read_excel方法的常用参数，以及使用示例"
 date: 2021-02-23 10:57:39
 author: "rpl"
-header-img: "img/panda1.jpg"
+header-img: "img/panda2.jpg"
 header-mask:  0.65
 multilingual: false
 catalog: true
