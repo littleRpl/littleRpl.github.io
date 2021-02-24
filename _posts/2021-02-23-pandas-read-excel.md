@@ -68,7 +68,7 @@ pd.read_excel(file_name)
 ***
 ## 三 示例
 
-如图是演示使用的execel文件，它包含5张工作表。
+如图是演示使用的excel文件，它包含5张工作表。
 ![image-20210222173101692](/img/pandas-read_excel/image-20210222173101692.png)
 
 
